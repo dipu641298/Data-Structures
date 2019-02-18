@@ -62,7 +62,7 @@ pii query(int in, int pl, int pr, int l, int r)
 
 int main()
 {
-    freopen("inp.txt","r",stdin);
+    //freopen("inp.txt","r",stdin);
     int n;
     cin >> n ;
     int u,v;
@@ -78,15 +78,15 @@ int main()
     build(1,0,euler.size()-1);
 
     for(int i=0; i<euler.size(); i++){
-        cout << euler[i].first << " " ;
+        cout << euler[i].first << " " ;   /// Euler List
     }
     cout << endl;
     for(int i=0; i<euler.size(); i++){
-        cout << euler[i].second << " " ;
+        cout << euler[i].second << " " ;  /// Height of each node in Euler List
     }
     cout << endl;
     for(int i=1; i<=n; i++){
-        cout << first[i] << " ";
+        cout << first[i] << " ";            /// List of first appearance of any node in euler list
     }
     cout << endl;
 
@@ -103,3 +103,27 @@ int main()
 
     return 0;
 }
+
+
+/* Sample Input :
+13
+1 2
+1 3
+2 4
+2 5
+4 6
+4 7
+4 8
+3 9
+9 10
+9 11
+10 12
+10 13
+6
+13 3
+4 11
+6 8
+4 9
+5 1
+11 12
+*/
